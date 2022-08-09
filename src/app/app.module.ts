@@ -11,7 +11,7 @@ import { AppService } from './app.service';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://docker:mongopw@mongodb:27017'),
+    MongooseModule.forRoot('mongodb://root:example@mongo:27017/'),
     GraphQLModule.forRoot({
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       sortSchema: true,
